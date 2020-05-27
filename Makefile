@@ -13,10 +13,10 @@ TEXT1_SECTIONS = .text .data
 
 
 run:
-	@python3 tools/pyboard.py --device $(DEVICE) blink_uPython/main.py
+	@python3 tools/pyboard.py --device $(DEVICE) dimmer_uPython/main.py
 
 cpy:
-	@python3 tools/pyboard.py --device $(DEVICE) -f cp blink_uPython/main.py :
+	@python3 tools/pyboard.py --device $(DEVICE) -f cp dimmer_uPython/main.py :
 
 rm:
 	@python3 tools/pyboard.py --device $(DEVICE) -f rm main.py
