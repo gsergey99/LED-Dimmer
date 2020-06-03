@@ -11,8 +11,6 @@
 #   Porpuse: Función de un LED-Dimmer
 ############################################################
 
-from machine import Pin
-from machine import ADC
 from pyb import Timer
 from pyb import ADC
 from time import sleep
@@ -22,6 +20,7 @@ import sys
 import pyb
 
 class LED_Dimmer():
+
     
     def __init__(self):
         """[Definición de atributos]
@@ -80,7 +79,7 @@ def measure_bright(led_dimmer):
     next_state = 2
 
 def led_dimmed(led_dimmer):
-    """[Función que modifica la señal que está asociacada al LED]
+    """[Función para definir el estado que modifica la señal que está asociada al LED]
 
     Arguments:
         led_dimmer -- [Objeto de led_dimmer por argumento]]
